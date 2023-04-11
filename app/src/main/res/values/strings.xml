@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Find My Phone</string>
+    <string name="map">Map</string>
+
+
+    <string name="maps">maps</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+
+    <string name="place_an_address">Place an Address</string>
+
+    <string name="postal_code">Postal code :</string>
+    <string name="my_location">My Location:</string>
+    <string name="city">City :</string>
+    <string name="state">State :</string>
+    <string name="address">Address:</string>
+    <string name="routes">Routes</string>
+    <string name="login_section">Login Section</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="registration_section">Registration Section</string>
+    <string name="register">Register</string>
+    <string name="don_t_worry_if_you_forgot_your_password">don\'t worry if you forgot your password</string>
+    <string name="enter_your_email_here">enter your email here</string>
+    <string name="please_enter_your_registered_email_address_we_will_send_you_an_email_for_resetting_your_password">please Enter your registered email address...we will send you an email for resetting your password</string>
+
+    <string name="default_notification_channel_id">com.softexpoitmaps.findmyphone.ceo</string>
+    <string name="logout">Logout</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_passwords">Enter your Password</string>
+    <string name="login1">Login</string>
+    <string name="enter_email_address_for_search">Enter Email Address For Search</string>
+
+    <string name="reset_password">Reset Password</string>
+    <string name="draw_routes">Draw Routes</string>
+</resources>
+
+
+
+
+

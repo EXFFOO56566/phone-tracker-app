@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#202232"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="#202232"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#202232"
+            android:clickable="true"
+            android:focusable="true"
+            android:foregroundGravity="center_vertical"
+            android:padding="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/carda"
+            >
+
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="63sp"
+                android:padding="10sp"
+
+                android:layout_margin="10sp"
+                android:hint="Enter Nickname for the user "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:background="@drawable/buttonround2"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/locateemail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <EditText
+                android:id="@+id/locateemail"
+                android:layout_width="match_parent"
+                android:layout_height="63sp"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:hint="Enter Registered Email "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:background="@drawable/buttonround2"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/locatepin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nickname" />
+
+            <EditText
+                android:id="@+id/locatepin"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:hint="Enter Registered Pin "
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+
+                android:background="@drawable/buttonround2"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintBottom_toTopOf="@+id/savebutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locateemail" />
+
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:foregroundGravity="center_horizontal"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/locatepin"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#2C383C"
+                    android:text=" Save "
+                    android:padding="15sp"
+                    android:layout_margin="10sp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    tools:ignore="RtlCompat" />
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

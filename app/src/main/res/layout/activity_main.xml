@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softexpoitmaps.findmyphone.business.MainActivity">
+
+    <include
+        layout="@layout/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+android:id="@+id/appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout="@layout/activity_main">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigation"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="90sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/white"
+        android:clickable="true"
+        android:elevation="16dp"
+        app:maxImageSize="35dp"
+        android:focusable="true"
+        android:visibility="visible"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fragment"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:pressedTranslationZ="24dp"
+        app:srcCompat="@drawable/icon"
+        tools:srcCompat="@drawable/icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/faball"
+        android:layout_width="56dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="122dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        app:maxImageSize="35dp"
+
+        android:visibility="visible"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/fab"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/logo_map1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/place"
+        android:clickable="true"
+        app:backgroundTint="#ffffff"
+        app:maxImageSize="35dp"
+        android:contentDescription="@string/maps"
+        android:focusable="true"
+        android:src="@drawable/place"
+        app:layout_constraintBottom_toTopOf="@+id/faball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintTop_toBottomOf="@+id/navigation"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+
+
+        <com.luseen.spacenavigation.SpaceNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:foregroundGravity="center"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:active_item_color="#CA8725"
+            app:centre_button_color="#E833736E"
+            app:inactive_item_color="@android:color/white"
+            app:space_background_color="#1B2427"
+            app:centre_button_icon="@drawable/location"
+            app:space_item_icon_size="25sp"
+            app:space_item_icon_only_size="25sp"
+            app:space_item_text_size="14dp"
+
+
+            />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        app:cardBackgroundColor="#1B2427"
+        android:padding="10sp"
+        android:layout_marginTop="5sp"
+        app:cardCornerRadius="20sp"
+        android:layout_margin="5sp"
+        android:foregroundGravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#202232"
+            android:layout_margin="5sp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#202232"
+        android:layout_margin="5sp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/nicknameshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname"
+            android:layout_margin="4sp"
+            android:padding="9sp"
+            android:background="#2C383C"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/emailshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abcd_fffgahsdsfcsfew@gmail.com"
+            android:layout_margin="1sp"
+            android:padding="9sp"
+            android:background="#2C383C"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:background="#2C383C"
+    android:layout_margin="5sp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track this User"
+        android:layout_margin="4sp"
+        android:padding="5sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"/>
+<androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/locateonoff"
+    android:padding="5sp"
+    android:layout_width="60sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+            <TextView
+                android:id="@+id/deleteuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:foregroundGravity="center_horizontal"
+                android:textAlignment="center"
+                android:padding="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_gravity="center_horizontal"
+                android:background="#2C383C"
+                android:text="Delete This User"
+                android:textColor="#FAF6F5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#242637"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_margin="2sp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+
+
+            <include layout="@layout/appbar33"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/tool1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                app:cardBackgroundColor="#2C383C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/cardadress"
+                app:layout_constraintTop_toBottomOf="@+id/tool1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="2sp"
+                 android:gravity="center_horizontal"
+                 android:layout_margin="2sp"
+                 android:layout_gravity="center_horizontal">
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="Subscription :"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:textColor="@android:color/white"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_height="wrap_content"/>
+
+                 <TextView
+                     android:id="@+id/usersubsid"
+                     android:layout_width="wrap_content"
+                     android:text=" Free User"
+                     android:textColor="@android:color/white"
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_height="wrap_content"/>
+
+
+
+
+
+
+             </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/limitofuser"
+                        android:layout_width="wrap_content"
+                        android:text="Can Locate 3 users  only"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_margin="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp"
+        android:layout_margin="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/cardadress"
+        app:layout_constraintTop_toBottomOf="@+id/tool1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="#2C383C"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2sp"
+                android:background="#2C383C"
+                android:gravity="center_horizontal"
+                android:layout_margin="2sp"
+                android:layout_gravity="center_horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Subscription Plans"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#2C383C"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Bronze - can locate 7 users  $11 only"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/bronze"
+                    android:layout_width="50sp"
+                    android:text="Buy"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:padding="5sp"
+                    android:background="@drawable/buttonround"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#2C383C"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Silver - can locate 12 users  $19 only"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:layout_margin="10sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/silver"
+                    android:layout_width="50sp"
+                    android:text="Buy"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:padding="5sp"
+                    android:background="@drawable/buttonround"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#2C383C"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Gold  - can locate 20 users  $23  only"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:layout_margin="10sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/gold"
+                    android:layout_width="50sp"
+                    android:text="Buy"
+                    android:textStyle="bold"
+
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal"
+                    android:padding="5sp"
+                    android:background="@drawable/buttonround"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

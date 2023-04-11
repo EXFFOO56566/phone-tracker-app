@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#1B2427"
+    android:id="@+id/toolbar"
+    android:layout_weight="5"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="-10sp"
+        android:layout_height="wrap_content"
+       android:src="@drawable/logo_map1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Find My Phone - Subscriptions"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="@color/space_white"
+
+        />
+
+</androidx.appcompat.widget.Toolbar>

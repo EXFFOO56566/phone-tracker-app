@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="630sp"
+    android:background="#202232"
+    app:layout_behavior="com.google.android.material.BottomSheet"
+   >
+
+    <include layout="@layout/appbar4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tool2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="#202232"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardaddemails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool2" >
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="Instructions\nIn This Section, You can Track Your Anothor Phones Location By Using the MyMap App's Registered Email id of that phones and the Registered Pin Number of That Phones.Make Sure That Your Another Phones that you want to Track must have the MyMap - Find My Phone Application installed and login and Their 'Track this device' option is ON for location sharing in that phones inside the MyMap- Find My Phone App"
+            android:textAlignment="center"
+           android:textColor="@color/space_white"
+            android:textSize="13sp"
+            android:background="#2C383C"
+            android:textStyle="bold"
+            android:layout_margin="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardaddemails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginTop="10sp"
+       app:cardBackgroundColor="#2C383C"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toTopOf="@id/carda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addcard">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/addemails"
+            android:layout_width="wrap_content"
+            android:src="@drawable/addbtn"
+
+            android:background="@drawable/addbtn"
+
+            android:foregroundGravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="10sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:text="Add Emails To Track (Click Here)"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginBottom="15sp"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="#2C383C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardaddemails">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:padding="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="15sp"
+            android:background="#2C383C"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="290sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

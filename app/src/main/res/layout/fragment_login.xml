@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_height="match_parent">
+
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/buttonround2"
+      android:hint="@string/enter_your_email"
+      android:layout_marginTop="15sp"
+      android:gravity="center_vertical"
+      android:inputType="textEmailAddress"
+      android:paddingStart="20dp"
+      android:paddingEnd="20sp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:textColor="@android:color/black"
+      android:textColorHint="@android:color/darker_gray"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@id/password_login"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias=".5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias=".3"
+      app:layout_constraintWidth_percent=".8" />
+
+  <EditText
+      android:id="@+id/password_login"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:background="@drawable/buttonround2"
+      android:hint="Enter your Password"
+      android:inputType="textPassword"
+      android:paddingStart="20dp"
+      android:layout_marginTop="10sp"
+      android:paddingEnd="20sp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:textColor="@android:color/black"
+
+      android:textColorHint="@android:color/darker_gray"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/orr"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias=".5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/email"
+      app:layout_constraintVertical_bias="0"
+      app:layout_constraintWidth_percent=".8" />
+
+  <Button
+      android:id="@+id/login_btn"
+      android:layout_width="288dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/bg_round"
+      android:text="@string/login1"
+      android:gravity="center_vertical"
+      android:foregroundGravity="center_horizontal"
+      android:textAlignment="center"
+      android:textColor="@android:color/white"
+      android:textSize="17sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/orr"
+      app:layout_constraintWidth_percent=".7" />
+
+  <TextView
+      android:id="@+id/orr"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+
+      android:background="@android:color/white"
+      android:text="Forgot password? Click here..."
+      android:textColor="@android:color/black"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="@id/password_login"
+      app:layout_constraintBottom_toTopOf="@+id/login_btn"
+      app:layout_constraintHorizontal_bias="1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/password_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

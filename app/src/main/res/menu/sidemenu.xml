@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    >
+ 
+
+    <item android:title="This Device"
+        android:enabled="true"
+        android:id="@+id/thisdevice"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/phone"/>
+    <item android:title="My Location"
+        android:enabled="true"
+        android:id="@+id/myloc"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/location"/>
+    <item android:title="Another Phone"
+        android:enabled="true"
+        android:id="@+id/anotherphone"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/anotherphone"/>
+
+
+
+
+</menu>

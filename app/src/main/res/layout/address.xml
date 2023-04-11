@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e6e6e6"
+    android:layout_height="wrap_content"
+    android:layout_margin="2sp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#202232"
+            android:clickable="true"
+            android:focusable="true"
+            android:foregroundGravity="center_vertical"
+            android:padding="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/appbar3"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/tool1"
+                android:layout_margin="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardd"
+                android:layout_width="232sp"
+                android:layout_height="192dp"
+                app:cardCornerRadius="20sp"
+                android:layout_margin="10sp"
+                android:background="#213942"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/cardadress"
+                app:layout_constraintTop_toBottomOf="@+id/tool1" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="#2C383C"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="210dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10sp"
+                        android:foregroundGravity="center_vertical"
+                        android:padding="10sp"
+
+                        android:text="Please Enter Your New Pin For This Device"
+
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white_with_alpha"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/pintype"
+                        android:layout_width="210dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10sp"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:background="@drawable/buttonround2"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:padding="10sp"
+                        app:layout_constraintBottom_toTopOf="@+id/pinsave"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <Button
+                        android:id="@+id/pinsave"
+                        android:layout_width="210dp"
+                        android:layout_height="47dp"
+android:padding="10sp"
+                        android:layout_margin="10sp"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:text="Save"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:background="#202232"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pintype"
+                        app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100sp"
+                android:layout_height="165sp"
+                app:cardCornerRadius="30sp"
+                android:id="@+id/cardadress"
+              android:layout_margin="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/tool1">
+
+                <TextView
+                    android:id="@+id/placename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#2C383C"
+                    android:padding="8sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:scrollbarStyle="insideInset"
+                    android:textAlignment="center"
+                    android:text="You Can Change Your MyMap-Find Your Phone app's Registered Pin From here"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white_with_alpha"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+
+                    tools:layout_editor_absoluteX="11dp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

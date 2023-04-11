@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="480sp"
+    android:background="#242639"
+    app:layout_behavior="com.google.android.material.BottomSheet"
+   >
+
+    <include layout="@layout/appbar5"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/tool2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addcard"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_margin="20sp"
+        app:cardCornerRadius="20sp"
+        app:cardBackgroundColor="#2C383C"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool2" >
+
+        <TextView
+            android:id="@+id/myaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="@string/my_location"
+            android:textAlignment="center"
+           android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carda"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="30sp"
+        app:cardCornerRadius="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addcard">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2C383C"
+        android:clickable="true"
+        android:focusable="true"
+        android:foregroundGravity="center_vertical"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carda"
+        >
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/city"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/city_value"
+            app:layout_constraintBottom_toTopOf="@+id/state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/state"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/state_value"
+            app:layout_constraintBottom_toTopOf="@+id/country"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="12dp"
+            android:text="Country :"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/country_value"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/country2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/state" />
+        <TextView
+            android:id="@+id/country2"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="7sp"
+            android:layout_marginBottom="8dp"
+            android:text="Postal :"
+            android:textAlignment="viewEnd"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/postal_value"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.973"
+
+            app:layout_constraintStart_toEndOf="@+id/country"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/country" />
+        <TextView
+            android:id="@+id/city_value"
+            android:layout_width="195dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="12sp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/state_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/city"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/state_value"
+            android:layout_width="195dp"
+            android:layout_height="30dp"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="12dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/country_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+
+            app:layout_constraintStart_toEndOf="@+id/state"
+            app:layout_constraintTop_toBottomOf="@+id/city_value" />
+
+        <TextView
+            android:id="@+id/country_value"
+            android:layout_width="195dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="12sp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/postal_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/country"
+            app:layout_constraintTop_toBottomOf="@+id/state_value" />
+
+
+        <TextView
+            android:id="@+id/postal_value"
+            android:layout_width="195dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11sp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/country2"
+            app:layout_constraintTop_toBottomOf="@+id/country_value" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18231406454",
+    "project_id": "mymap-findmyphone-business",
+    "storage_bucket": "mymap-findmyphone-business.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18231406454:android:091c918785c5bc6ec55457",
+        "android_client_info": {
+          "package_name": "com.softexpoitmaps.findmyphone.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18231406454-hu7kkdvjaei6v1ttjlt4rbd5f8n1qb10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIr2vdWFS8E-UgkwxhSuA0LH9fmxc-un4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18231406454-hu7kkdvjaei6v1ttjlt4rbd5f8n1qb10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
